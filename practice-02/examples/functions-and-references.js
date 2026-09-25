@@ -8,13 +8,14 @@ console.log("Эксперимент 1. Параметры и возвращае�
   }
   console.log(sum(2, 3));
   console.log(sum("2", 3));
+  console.log(typeof(sum("2", 3)));
 }
 
 console.log("Эксперимент 2. Тело стрелочной функции");
 {
   // Здесь намеренно пропущен return. Исправление входит в задание 1.
   const square = (value) => {
-    value * value;
+    return(value * value);
   };
   console.log(square(4));
 }
@@ -55,5 +56,6 @@ console.log("Эксперимент 6. Параметр по умолчанию"
   console.log(makeCaption());
   console.log(makeCaption(undefined));
   console.log(makeCaption(null));
+  console.log(typeof(makeCaption(null)));
   console.log(makeCaption(""));
 }
